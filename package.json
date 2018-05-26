@@ -40,6 +40,8 @@
     "start": "react-scripts start",
     "build": "npm run build:photolist && react-scripts build",
     "build:photolist": "babel-node --plugins transform-es2015-modules-commonjs run/build-photolist.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "prettier": "prettier --single-quote --print-width=120 --trailing-comma es5 --no-semi",
@@ -59,5 +61,6 @@
   "engines": {
     "npm": ">=4",
     "node": ">=6"
-  }
+  },
+  "homepage": "https://vanessadorbs.github.io/photoalbum/"
 }
