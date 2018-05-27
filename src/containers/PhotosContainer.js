@@ -27,7 +27,6 @@ const mapStateToProps = createStructuredSelector({
     state => state
   ),
 })
-console.log(PhotoActions)
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(PhotoActions, dispatch)
 }
